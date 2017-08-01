@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'orange juice';
+  url: "orange-juice-2.0.ttf"; }
+span {
+  display: inline-block; }
+
+body {
+  margin: 0; }
+
+.stopwatch {
+  display: flex;
+  margin: 0 auto;
+  height: 300px;
+  width: 300px;
+  background-color: #673AB7;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 30px; }
+
+.timer {
+  color: #fff;
+  font-size: 70px; }
+
+/*# sourceMappingURL=stopwatch.css.map */
