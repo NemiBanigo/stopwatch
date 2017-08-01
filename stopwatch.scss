@@ -7,22 +7,23 @@ span{
 }
 body{
     margin: 0;
-  
+    .stopwatch{ 
+        margin: 0 auto;
+        height: 300px;
+        width: 300px;
+        background-color:#673AB7;
+        text-align: center;
+        border-radius: 30px;
+    }
+    .timer{
+        color: #fff;
+        font-size: 70px;
+    }
+    .start{
+        background-color: #388E3C;
+    }
+    .stop{
+        background-color: #c00c00;
+    }
 
-}
-.stopwatch{
-    // display: flex; 
-    // flex-direction: column;
-    margin: 0 auto;
-    height: 300px;
-    width: 300px;
-    background-color:#673AB7;
-    // justify-content: center;
-    // align-items: center;
-    text-align: center;
-    border-radius: 30px;
-}
-.timer{
-    color: #fff;
-    font-size: 70px;
 }
