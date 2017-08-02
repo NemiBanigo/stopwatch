@@ -1,7 +1,4 @@
-@font-face{
-    font-family: 'orange juice';
-    url: ('orange-juice-2.0.ttf');
-}
+
 span{
     display:inline-block;
 }
@@ -9,21 +6,50 @@ body{
     margin: 0;
     .stopwatch{ 
         margin: 0 auto;
-        height: 300px;
         width: 300px;
+        padding: 70px;
         background-color:#673AB7;
         text-align: center;
         border-radius: 30px;
+        font-family: josefin sans, sans-serif;
     }
     .timer{
         color: #fff;
         font-size: 70px;
+        margin-top: 30px;
     }
     .start{
-        background-color: #388E3C;
+        background-color: #66BB6A;
+        border-style: none;
+        padding: 10px;
+        transition: 0.4s ease all;
+        &:hover{
+            background-color: #33691E;
+            cursor: pointer;
+
+        }
     }
     .stop{
-        background-color: #c00c00;
+        background-color: #ff6347;
+        border-style: none;
+        padding: 10px;
+        transition: 0.4s ease all;
+        &:hover{
+            background-color: #b71c1c;
+            cursor: pointer;
+        }
+    }
+    .reset{
+        display:block;
+        color: #fff;
+        margin-top: 10px;
+        background: none;
+        outline: none;
+        border: none;
+        width: 100%;
+        &:hover{
+            cursor: pointer;
+        }
     }
 
 }
