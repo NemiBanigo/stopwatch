@@ -6,6 +6,7 @@ const seconds = document.querySelector('.seconds');
 
 let timerTime = 00;
 let interval;
+let counting = false;
 
 
 
@@ -16,14 +17,24 @@ function keepzero(num){
 }
 
 function startTimer(){
+    if (counting)return;
     interval = setInterval(incrementTimer,1000);
+    counting = true;
     }
 
 
 function stopTimer (){
+    if (!counting)return;
+    clearInterval(interval);
+    counting = false;
 
 }
 function resetTimer(){
+    stopTimer()
+
+    timerTime = 0;
+    minutes.innerText =keepzero(00);
+    seconds.innerText=keepzero(00);
 
 }
 function incrementTimer(){
